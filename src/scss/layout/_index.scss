@@ -1,0 +1,12 @@
+.main-index :nth-child(1),
+.main-index :nth-child(2),
+.main-index :nth-child(3),
+.main-index :nth-child(4),
+.main-index :nth-child(5){
+    text-align: center;
+    padding: .7rem;
+}
+.main-index :nth-child(2),
+.main-index :nth-child(4){
+    color: blue;
+}

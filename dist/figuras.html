@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./build/css/app.css">    
+</head>
+<body>
+    <header>
+        <div></div>
+        <nav class="navegacion" >
+            <a href="index.html">Home</a>
+            <a href="figuras.html">Figuras</a>
+            <a href="impuestos.html">Para Contadores</a>
+        </nav>
+    </header>
+    <main class="contenedor ">
+        <div class="elemento-f figura-t">
+            <h2>Area de un Triangulo</h2>
+            <div class="forma">
+                    <img class="t" src="./img/triangulo.png" alt="">
+                    <input type="number" name="" class="base-t fig" placeholder="Base">
+                    <input type="number" name="" class="altura-t fig" placeholder="Altura">
+            </div>
+            <input  type="button" value="Tu Resultado" onclick="areaTriangulo()" >
+        </div>
+        
+        <div class="elemento-f figura-c">
+            <h2>Area de un Circulo</h2>
+            <div class="forma">
+                    <img class="t" src="./img/descarga.png" alt="">
+                    <input type="number" name="" class="radio-c fig" placeholder="Radio">
+            </div>
+            <input  type="button" value="Tu Resultado" onclick="areaCirculo()" >
+        </div>
+        <div class="cuadrado"></div>
+    </main>
+    <footer>
+        <p>V 1.0.0</p>
+    </footer>
+
+
+   <script src="script.js"></script> 
+</body>
+</html>

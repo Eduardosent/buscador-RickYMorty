@@ -1,0 +1,17 @@
+{
+  "name": "calcularimpuesto",
+  "version": "1.0.0",
+  "description": "aplicacion contable",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "author": "Eduardo Gomez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.64.2"
+  }
+}

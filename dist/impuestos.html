@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./build/css/app.css">    
+</head>
+<body>
+    <header>
+        <div></div>
+        <nav class="navegacion" >
+            <a href="index.html">Home</a>
+            <a href="figuras.html">Figuras</a>
+            <a href="impuestos.html">Para Contadores</a>
+        </nav>
+    </header>
+    
+    <main class="contenedor">
+        <h2>Calcular Estado de Resultados <span class="fin">(Completo)</span></h2>
+        <div  class="elemento-c formulariof">
+            <select name="" id="sociedad-tipo">
+                <option value="" disabled selected>Tipo de Sociedad</option>
+                <option value="0.05">De Personas 5%</option>
+                <option value="0.07">De Capital 7%</option>
+            </select>
+            
+            <input type="number" name="" class="ingresostotales cont" placeholder="pon los ingresos totales:" value="">
+            <input type="number" name="" class="costodeventas cont" placeholder="pon el costo de ventas:" value="">
+            <input type="number" name="" class="gastosdeventas cont" placeholder="pon los gastos de ventas:" value="">
+            <input type="number" name="" class="gastosdeadministracion cont" placeholder="pon los gastos de administracion" value="">
+            <input type="number" name="" class="gastosfinancieros cont" placeholder="pon los gatos financieros:" value="">
+            <input type="button" value="Tu Resultado" onclick="estadoDeResultados()" >
+        </div>
+    
+        <h2>Calcular salario, AFP, ISSS e ISR <span class="fin">(Completo)</span></h2>
+        <div  class="elemento-c formularios">
+            <input type="number" name="" class="sueldo cont" placeholder="Tus ingresos totales " value="">
+            <input type="button" value="Tu Resultado" onclick="salarioNeto()" >
+        </div>
+        <div class="cuadrado"></div>
+
+    </main>
+    <footer>
+        <p>V 1.0.0</p>
+    </footer>
+
+
+   <script src="script.js"></script> 
+</body>
+</html>

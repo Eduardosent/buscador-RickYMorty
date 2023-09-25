@@ -1,0 +1,211 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    margin: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navegacion {
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 657px) {
+    .navegacion{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+.contenedor{
+    margin: 0 auto;
+    width: 85%;
+}
+@media (min-width:600px) {
+    .contenedor {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+    padding: .5rem; 
+}
+@media (min-width:657px) {
+    .navegacion a {
+        padding: .5rem 2rem .5rem 0;
+    }
+}
+h2{
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+}
+.fin {
+    color: greenyellow;
+    background-color: black;
+    text-shadow: 0 0 5px greenyellow,
+    0 0 15px greenyellow;
+    padding: .2rem;
+    border-radius: .8rem;
+}
+
+
+.elemento-c {
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.cont {
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid blue;
+    padding: .5rem;
+    font-size: .6rem;
+    text-align: center;
+
+}
+@media (min-width: 300px) {
+    .cont {
+    font-size: .9rem;
+    }
+}
+@media (min-width: 480px) {
+    .cont {
+    width: 300px;
+    margin: 0 auto;
+    }
+}
+
+input[type="button"] {
+    background: blue;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: .5rem 0 .5rem 0;
+    box-shadow: 0 0 10px blue
+    /*0 0 15px blue*/;
+}
+input[type="button"]:hover {
+    box-shadow: 0 0 15px blue,
+    0 0 20px blue;
+}
+@media (min-width:700px) {
+    input[type="button"] {
+        margin: 1rem 3rem 1rem 3rem;
+    }
+}
+.resultado {
+    background: rgb(16, 175, 16);
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+.problema {
+    background: rgb(241, 66, 13);
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+.cuadrado {
+    height: 120px;
+    width: 10px;
+    background: blue;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    animation: anime 4s infinite; 
+    animation-timing-function: linear;
+    border-radius: .8rem;
+}
+@media (min-width: 480px) {
+    .cuadrado {
+        height: 150px;
+    }
+}
+/*@keyframes anime {
+    from { transform: rotate(120deg);} to { transform: rotate(260deg);}
+    from { background-color: red;} to { background-color: blue;}
+}*/
+@keyframes anime {
+    0%{ background-color: red;}
+    25%{ background-color: blue;}
+    50%{ background-color: green;}
+    75%{ background-color: yellow;}
+    100%{ background-color: red;}
+
+    0%{ rotate: 0deg;}
+    25%{ rotate: 90deg;}
+    50%{ rotate: 180deg;}
+    75%{ rotate: 270deg;}
+    100%{ rotate: 360deg;}
+}
+.elemento-f {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+.forma {
+    display: flex;
+    flex-direction: column;
+}
+.t{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.fig {
+    background-color: aliceblue;
+    border: 2px solid red;
+    color: red;
+    border-radius: 1rem;
+    padding: .4rem;
+    text-align: center;
+    width: 100px;
+    margin: .5rem auto;
+}
+.fig::placeholder {
+    color: red;
+}
+@media (min-width: 450px) {
+    .forma {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+
+    }
+    .t{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .base-t{
+        position: absolute;
+        top: 230px;
+        left: 30%;
+    }
+    .altura-t{
+        position: absolute;
+        top: 20px;
+        left: 0px;
+    }
+    .radio-c{
+        position: absolute;
+        top: 90px;
+        left: 40px; 
+    }
+}
